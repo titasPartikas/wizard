@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="form-container">
+        <div class="form-content step-0">
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text" name="firstName" required />
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" name="lastName" required />
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+        <div class="form-content step-1 hidden">
+          <label for="primaryAddress">Primary Address</label>
+          <input
+            id="primaryAddress"
+            type="text"
+            name="primaryAddress"
+            required
+          />
+          <label for="secondaryAddress">Secondary Address</label>
+          <input id="secondaryAddress" type="text" name="secondaryAddress" />
+          <label for="shirtSize">Shirt Size</label>
+          <input id="shirtSize" type="text" name="shirtSize" required />
+        </div>
+        <div class="form-content step-2 hidden">
+          <p class="password-message hidden">Passwords must match!</p>
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" required />
+          <label for="repeatPassword">Repeat Password</label>
+          <input
+            id="repeatPassword"
+            type="password"
+            name="repeatPassword"
+            required
+          />
+        </div>
+        <div class="form-content step-3 hidden">
+          <textarea class="result" disabled></textarea>
+        </div>
+        <div class="form-footer">
+          <button id="back-btn" class="hidden">Back</button>
+          <button id="confirm-btn">Continue</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
